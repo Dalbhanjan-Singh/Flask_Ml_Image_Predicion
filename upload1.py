@@ -4,7 +4,7 @@ from  keras.models import load_model
 import tensorflow as tf
 import cv2
 import numpy as np
-app = Flask("kapil")  
+app = Flask("Dalbhanjan")  
  
 @app.route('/')  
 def upload():  
@@ -29,5 +29,5 @@ def success():
             return render_template("success.html", name = f.filename ,tee=type(img),ml=int(model.predict(test_image_arr_4d)[0][0]) ,data ="dog")
           
   
-if "kapil" == "_main_":
+if "Dalbhanjan" == "_main_":
     app.run(debug = True)    
